@@ -35,7 +35,7 @@ jobs:
       uses: aitorres/aws-s3-create-bucket@v1.2.0
       with:
         bucket-name: EscapeFromMatrix
-        aws-region: ap-southeast-2=
+        aws-region: ap-southeast-2
         acl: private
     - name: Copy a folder to s3
       uses: prewk/s3-cp-action@v2
