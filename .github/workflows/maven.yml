@@ -32,15 +32,10 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: AWS S3 Create Bucket
-  # You may pin to the exact commit or the version.
-  # uses: aitorres/aws-s3-create-bucket@bf2701c2732789d5924ae02b68976343a31f6db5
-    - uses: aitorres/aws-s3-create-bucket@v1.2.0
+      uses: aitorres/aws-s3-create-bucket@v1.2.0
       with:
-        # Name of the bucket that will be created (make sure it is unique)
         bucket-name: EscapeFromMatrix
-        # AWS Region (default: us-east-1)
-        aws-region: ap-southeast-2
-        # ACL to apply to the bucket during creation (default: private)
+        aws-region: ap-southeast-2=
         acl: private
     - name: Copy a folder to s3
       uses: prewk/s3-cp-action@v2
