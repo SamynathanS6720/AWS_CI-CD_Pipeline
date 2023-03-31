@@ -34,14 +34,8 @@ jobs:
     - name: Copy file to S3 bucket
       run: |
        cd /home/ec2-user/self-hosted/_work/AWS_CI-CD_Pipeline
-       zip -r AWS_CI-CD_Pipeline webapp
-       aws s3 cp /home/ec2-user/self-hosted/_work/AWS_CI-CD_Pipeline/webapp s3://web-server-artifact
-#     - name: S3 CopyPaste
-#       uses: tpaschalis/s3-cp-action@v0.2.0
-#       with:
-#         source: './_work/AWS_CI-CD_Pipeline/AWS_CI-CD_Pipeline'
-#         dest: 's3://web-server-artifact/'
-#         flags: --recursive
+       zip -r webapp.zip AWS_CI-CD_Pipeline/
+       aws s3 cp /home/ec2-user/self-hosted/_work/AWS_CI-CD_Pipeline/webapp.zip s3://web-server-artifact
 
       
     #Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
