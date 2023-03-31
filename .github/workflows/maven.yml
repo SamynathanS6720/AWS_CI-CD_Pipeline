@@ -17,7 +17,7 @@ on:
 jobs:
   build:
 
-    runs-on: EscapeFromMatrix
+    runs-on: SamynathanS6720-AWS_CI-CD_Pipeline.EscapeFromMatrix
 
     steps:
     - uses: actions/checkout@v3
