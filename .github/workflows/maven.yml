@@ -31,8 +31,8 @@ jobs:
       uses: yuzhiyongcn/setup-maven@v1.0.0
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: Copy a folder to s3
-      uses: prewk/s3-cp-action@v2
+    - name: S3 CopyPaste
+      uses: tpaschalis/s3-cp-action@v0.2.0
       with:
         source: './_work/AWS_CI-CD_Pipeline/AWS_CI-CD_Pipeline'
         dest: 's3://web-server-artifact/'
