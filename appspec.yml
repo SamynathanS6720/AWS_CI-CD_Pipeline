@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-- source: /
+- source: /target/helloworld.war
   destination: /usr/share/tomcat/webapps/
 # - source: /scripts/requirements.txt
 #   destination: /home/ec2-user/scripts
