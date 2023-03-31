@@ -32,8 +32,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Copy file to S3 bucket
-      run: pwd
-#       aws s3 cp ./_work/AWS_CI-CD_Pipeline/AWS_CI-CD_Pipeline s3://web-server-artifact/
+      run: aws s3 cp /target/* s3://web-server-artifact/
 #     - name: S3 CopyPaste
 #       uses: tpaschalis/s3-cp-action@v0.2.0
 #       with:
