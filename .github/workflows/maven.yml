@@ -25,7 +25,7 @@ jobs:
 #     - name: Set up Docker Buildx
 #       uses: docker/setup-buildx-action@v2
     - name: Install Docker
-      run: yum install docker
+      run: sudo yum install docker -y
       
     - name: Set up JDK 11
       uses: actions/setup-java@v3
