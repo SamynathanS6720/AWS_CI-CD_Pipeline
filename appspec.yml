@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+files:
+- source: /
+  destination: /usr/share/tomcat/webapps/
+# - source: /scripts/requirements.txt
+#   destination: /home/ec2-user/scripts
+hooks:
+  AfterInstall:
+  - location: scripts/restart
+    timeout: 300
+    runas: root
+#   - location: s
