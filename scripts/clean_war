@@ -1,2 +1,3 @@
-sudo rm -r /usr/share/tomcat/webapps/helloworld.war
-sudo rm -rf /usr/share/tomcat/webapps/helloworld
+cd /
+rm -r /usr/share/tomcat/webapps/helloworld.war
+rm -rf /usr/share/tomcat/webapps/helloworld
