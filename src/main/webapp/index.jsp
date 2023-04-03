@@ -39,13 +39,13 @@ Body {
   margin: 5px 5px;  
   padding: 10px 10px;  
   align-items: center;  
-  background-color: green;  
+  background-color: rgb(175, 170, 3);  
 }
 
 
 button {   
         
-       background-color: #4CAF50;   
+       background-color: #d4b310;   
        width: 100%;  
         color: white;   
         padding: 12px 20px;   
