@@ -10,6 +10,9 @@ hooks:
   - location: scripts/clean_war
     timeout: 300
     runas: root
+  - location: scripts/restart
+    timeout: 300
+    runas: root
   AfterInstall:
   - location: scripts/restart
     timeout: 300
