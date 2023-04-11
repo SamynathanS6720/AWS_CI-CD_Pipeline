@@ -39,13 +39,13 @@ Body {
   margin: 5px 5px;  
   padding: 10px 10px;  
   align-items: center;  
-  background-color: rgba(244, 200, 3, 0.911);  
+  background-color: green;  
 }
 
 
 button {   
         
-       background-color: rgba(244, 200, 3, 0.911);   
+       background-color: green;   
        width: 100%;  
         color: white;   
         padding: 12px 20px;   
@@ -60,7 +60,7 @@ button {
         margin: 5px 5px;  
         padding: 10px 10px;   
         display: inline-table ;   
-        border: 2px solid rgba(244, 200, 3, 0.911);  
+        border: 2px solid green;  
         border-radius: 50px; 
         box-sizing: border-box;   
     }  
